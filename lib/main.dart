@@ -6,13 +6,17 @@ void main() {
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
+    var questions = [
+      'What\'s your favorite color?',
+      'What\'s your favorite animal'
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text("My first app"),
         ),
         body: Column(
-          children: [],
+          children: [Text('The Question!')],
         ),
       ),
     );
