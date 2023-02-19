@@ -25,7 +25,8 @@ class MyAppState extends State<MyApp> {
     var questions = [
       'What\'s your favorite color?',
       'What\'s your favorite animal',
-      'wwwwww'
+      'wwwwww',
+      'What\'s your favourite subject',
     ];
     return MaterialApp(
       home: Scaffold(
