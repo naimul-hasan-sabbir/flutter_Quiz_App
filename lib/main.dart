@@ -42,7 +42,9 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Question(questions.elementAt[_questionIndex]['questionText']),
+            Question(
+              questions[_questionIndex]['questionText'] as String,
+            ),
             Answer(_answerQuestion),
             Answer(_answerQuestion),
             Answer(_answerQuestion),
