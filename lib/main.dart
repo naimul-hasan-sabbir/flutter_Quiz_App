@@ -8,6 +8,17 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  static const questions = [
+    {
+      'questionText': 'What\'s your favourite color ?',
+      'answers': ['Black', 'Blue', 'White', 'Green']
+    },
+    {
+      'questionText': 'What\'s your favorite animal',
+      'answers': ['Lion', 'Rabbir', 'Eagle', 'Dragon']
+    },
+  ];
+
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -25,16 +36,6 @@ class _MyAppState extends State<MyApp> {
   }
 
   Widget build(BuildContext context) {
-    var questions = [
-      {
-        'questionText': 'What\'s your favourite color ?',
-        'answers': ['Black', 'Blue', 'White', 'Green']
-      },
-      {
-        'questionText': 'What\'s your favorite animal',
-        'answers': ['Lion', 'Rabbir', 'Eagle', 'Dragon']
-      },
-    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
