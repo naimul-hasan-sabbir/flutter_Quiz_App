@@ -8,6 +8,14 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _MyAppState();
+  }
+}
+
+class _MyAppState extends State<MyApp> {
   static const questions = [
     {
       'questionText': 'What\'s your favourite color ?',
@@ -18,15 +26,6 @@ class MyApp extends StatefulWidget {
       'answers': ['Lion', 'Rabbir', 'Eagle', 'Dragon']
     },
   ];
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return _MyAppState();
-  }
-}
-
-class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
 
   void _answerQuestion() {
@@ -44,7 +43,7 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: [
             Question(
-              questions[_questionIndex]['questionText'] as String,
+              questions[_questionIndex]['questionText'],
             ),
             ...(questions[_questionIndex]['answers'] as List<String>)
                 .map((answer) {
