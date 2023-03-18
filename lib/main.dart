@@ -19,11 +19,21 @@ class _MyAppState extends State<MyApp> {
   static const _questions = [
     {
       'questionText': 'What\'s your favourite color ?',
-      'answers': ['Black', 'Blue', 'White', 'Green']
+      'answers': [
+        {'text': 'Black', 'score': 10},
+        {'text': 'Blue', 'score': 5},
+        {'text': 'White', 'score': 1},
+        {'text': 'Green', 'score': 2}
+      ]
     },
     {
       'questionText': 'What\'s your favorite animal',
-      'answers': ['Lion', 'Rabbir', 'Eagle', 'Dragon']
+      'answers': [
+        {'text': 'Lion', 'score': 10},
+        {'text': 'Rabbit', 'score': 1},
+        {'text': 'Eagle', 'score': 5},
+        {'text': 'Dragon', 'score': 15}
+      ]
     },
   ];
   var _questionIndex = 0;
