@@ -21,10 +21,15 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Text(
+        child: Column(
+          children: [
+            Text(
       resultPhrase,
       style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
       textAlign: TextAlign.center,
-    ));
+    ),
+    FlatButton(child: ),
+          ],
+        ));
   }
 }
